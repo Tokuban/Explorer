@@ -5,3 +5,10 @@ C:\Users\Tommi\source\repos\Explorer\Explorer\obj\Debug\Explorer.csprojResolveAs
 C:\Users\Tommi\source\repos\Explorer\Explorer\obj\Debug\Explorer.csproj.CoreCompileInputs.cache
 C:\Users\Tommi\source\repos\Explorer\Explorer\obj\Debug\Explorer.exe
 C:\Users\Tommi\source\repos\Explorer\Explorer\obj\Debug\Explorer.pdb
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\bin\Debug\Explorer.exe.config
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\bin\Debug\Explorer.exe
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\bin\Debug\Explorer.pdb
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.csprojAssemblyReference.cache
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.csproj.CoreCompileInputs.cache
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.exe
+C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.pdb
