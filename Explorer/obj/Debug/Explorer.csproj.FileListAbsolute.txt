@@ -12,3 +12,10 @@ C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.cs
 C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.csproj.CoreCompileInputs.cache
 C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.exe
 C:\Users\tommi\OneDrive\Documents\GitHub\Explorer\Explorer\obj\Debug\Explorer.pdb
+F:\GitHub\Explorer\Explorer\bin\Debug\Explorer.exe.config
+F:\GitHub\Explorer\Explorer\bin\Debug\Explorer.exe
+F:\GitHub\Explorer\Explorer\bin\Debug\Explorer.pdb
+F:\GitHub\Explorer\Explorer\obj\Debug\Explorer.csprojAssemblyReference.cache
+F:\GitHub\Explorer\Explorer\obj\Debug\Explorer.csproj.CoreCompileInputs.cache
+F:\GitHub\Explorer\Explorer\obj\Debug\Explorer.exe
+F:\GitHub\Explorer\Explorer\obj\Debug\Explorer.pdb

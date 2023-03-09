@@ -9,7 +9,6 @@ using System.IO;
 
 namespace Explorer
 {
-    // HELLO IS THE PUSH WORKING
     class Program
     {
         [STAThread]
@@ -31,7 +30,7 @@ namespace Explorer
         public Panel addr;
         string action = "";
         public List<MyTab> tabs = new List<MyTab>();
-        Panel cuts;
+        Panel shortcuts;
         public Panel mouseMenu;
         
         public void Init()
@@ -46,13 +45,13 @@ namespace Explorer
             // mousemenu config
             mouseMenu = new Panel();
 
-            cuts = new Panel();
-            cuts.Name = "cuts";
+            shortcuts = new Panel();
+            shortcuts.Name = "shortcuts";
             mf.ClientSizeChanged += (s, e) =>
             {
                 wb.Height = mf.Height - wb.Location.Y - 30;
-                wb.Width = mf.Width - cuts.Width - 20;
-                cuts.Height = mf.Height - cuts.Location.Y - 30;
+                wb.Width = mf.Width - shortcuts.Width - 20;
+                shortcuts.Height = mf.Height - shortcuts.Location.Y - 30;
                 addr.Size = new Size(mf.Width - addr.Location.X, xWidth);
             };
 
@@ -105,8 +104,8 @@ namespace Explorer
             mf.Controls.Add(addr);
 
             // common shortcuts
-            cuts.Size = new Size(150, 0);
-            cuts.Click += (s, e) =>
+            shortcuts.Size = new Size(150, 0);
+            shortcuts.Click += (s, e) =>
             {
                 if (addr.Controls[0] is TextBox)
                     UpdateAddressBar();
@@ -117,8 +116,8 @@ namespace Explorer
                     mouseMenu.Dispose();
                 }
             };
-            mf.Controls.Add(cuts);
-            cuts.Top = xWidth * 2;
+            mf.Controls.Add(shortcuts);
+            shortcuts.Top = xWidth * 2;
             // shortcuts
             string user = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             CreateShortcut(Path.Combine(user, "Documents"));
@@ -128,7 +127,7 @@ namespace Explorer
             // webbrowser
             wb = new Web2(this);
             wb.Size = new Size(1920, 500);
-            wb.Location = new Point(cuts.Width, xWidth * 2);
+            wb.Location = new Point(shortcuts.Width, xWidth * 2);
             wb.Navigated += (s, e) =>
             {
                 OnUrlChange();
@@ -211,7 +210,7 @@ namespace Explorer
             Button cut = new Button();
             string[] dirs = path.Split('\\');
             cut.Text = dirs.Last();
-            cut.Size = new Size(cuts.Width, xWidth);
+            cut.Size = new Size(shortcuts.Width, xWidth);
             cut.Dock = DockStyle.Top;
             cut.Click += (s, e) =>
             {
@@ -221,7 +220,7 @@ namespace Explorer
                 }
                 wb.Navigate(path);
             };
-            cuts.Controls.Add(cut);
+            shortcuts.Controls.Add(cut);
         }
 
         private void CreateTabClass()
@@ -231,7 +230,7 @@ namespace Explorer
             tabs.Add(mt);
         }
 
-        public void MoveTabs2()
+        public void MoveTabs()
         {
             tabStartX = xWidth;
             foreach (MyTab tab in tabs)

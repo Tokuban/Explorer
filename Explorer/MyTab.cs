@@ -108,7 +108,7 @@ namespace Explorer
                 p.Dispose();
                 // move tabs appropriately
                 me.tabs.Remove(this);
-                me.MoveTabs2();
+                me.MoveTabs();
                 // what should be the new currentTab? last one by default for now
                 me.currentTab.tab.BackColor = Color.FromArgb(-986896);
                 me.currentTab.x.BackColor = Color.FromArgb(-986896);
@@ -164,7 +164,7 @@ namespace Explorer
             MyTab dupl = new MyTab(me, mf, wb, tW, xW, new List<Uri>(uris), uriIndex);
             dupl.CreateTab("dupl");
             me.tabs.Insert(me.tabs.IndexOf(this) + 1, dupl);
-            me.MoveTabs2();
+            me.MoveTabs();
         }
         private void MoveRight(object s, MouseEventArgs e)
         {
